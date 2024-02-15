@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINFALL PREDICTOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+       
+        .container {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 250px; */
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 550px;
+            box-shadow: 0 0 250px rgba(189, 43, 43, 0.1);
+           
+         
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        .section4 button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .up{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            /* background-color:white; */
+            margin: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            padding-left: 4px;
+            padding-top: 4px;
+}
+.section1{
+    /* background-color: #4caf50; */
+    height: 100dvh;
+    background-image: url('static\\jonathan-klok-NeRzxya_zyI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;   
+    text-align: center;
+    background-attachment: fixed;
+}
+.left h1{
+    color:#020b00;
+    text-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.left h1{
+    padding: 10px;
+    font-size: 3rem;
+}
+ul{
+    display: flex;
+    flex-direction:row;
+    
+}
+.right a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500px;
+    color: #CDFAD5;
+
+}
+.right a:hover{
+    color:white;
+    background-color: #5F0F40;
+    border-radius: 10px;
+    padding: 10px;
+}
+li{
+    margin-right: 50px;
+    margin-top: 15px;
+
+}
+.main-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200px;
+}
+.main-p{
+    font-size: 25px;
+    width: 800px;
+    margin-bottom: 80px;
+ 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-h1{
+    
+    align-items: center;
+    margin-bottom: 40px;
+    
+
+}
+.main-1 h1{
+    
+    font-size: 5rem;
+    color: #BED754 ;
+    text-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+    
+}
+
+.main-1 button a{
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    color: black;
+    background-color: #29ADB2;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+button a:hover{
+    background: #29ADB2;
+    color: #fff;
+
+    border-radius: 5px;
+    box-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+}
+.section2{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#BED754;
+    background-image: url('static\\osman-rana-GXEZuWo5m4I-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.all2 h1{
+    font-size: 5rem;
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #392467;
+    text-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+}
+.all2 p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+}
+
+
+.section3{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('static\\valentin-muller-bWtd1ZyEy6w-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    
+}
+.head3 h1{
+    font-size: 4.5rem;
+    margin: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #5F0F40;
+    text-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+}
+.head31{
+    display: flex;
+    flex-direction: row;
+
+}
+.left3{
+    width: 700px;
+    font-size: 30px;
+    padding: 20px;
+
+}
+.left3 p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right3 img{
+    width: 930px;
+    height: 600px;
+    border-radius: 50px;
+}
+
+.section4{
+    /* height: 150dvh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image: url('static\\daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form h1{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#5F0F40;
+    text-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+    
+}
+.form label{
+    color:black;
+    font-size: 30px;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form button{
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    background-color: #29ADB2;
+    
+    
+    
+    font-size: 25px;
+
+}
+.form .button:hover{
+    background: #29ADB2;
+    
+
+    border-radius: 5px;
+    box-shadow: 0 0 5px #29ADB2,
+                0 0 25px #29ADB2,
+                0 0 50px #29ADB2,
+                0 0 100px #29ADB2;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="up">
+        <a href="#section1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASZJREFUSEvt1dENwjAMBNDrJjAJMAkwCTAJMAmwCaPQk2rJCo4TG4n+NF+IhL74mpgBM41hJhcL/Lfkf4n6AeAN4JjZbRYmup3AWwbPwBqVYsN4FLbQFB6BPTSM98IW+gTwAnAqDldX7D1wDd0BWI0n+5DBW7CHSqEp3IOvUzU6ScbLSjkIcvAu1/DLuOBs3XMP5sNYsQAlyo1xjhuxcH63rjWXVtSC8yG6UqLSQGRO43sP5WZasETKh8pnjUpBJS7rq920B9aHyEItvNm+e2FG7qFhvAeuofxX4lzZQHTs6ag9lB2Kg9cljLeukxUvKxVUKgrj0QZioR5e7duRij3UwnXD+XrXrcMl7/huxFs7OIx9oxqOua4FN+9jdsECZ5ML/262qD+okksftAeq0wAAAABJRU5ErkJggg=="/></a>
+        
+    </div>
+    <section class="section1" id="section1">
+        <div class="nav">
+            <div class="left">
+                <h1>RAIN RADAR</h1>
+            </div>
+            <div class="right">
+                <ul type="none">
+                    <li><a href="#section1">HOME</a></li>
+                    <li><a href="#section2">ABOUT RAIN RADAR</a></li>
+                    <li><a href="#section3">DASHBOARD</a></li>
+                    <li><a href="#section4">PREDICTOR</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-1">
+            <h1 class="main-h1">PLANT TREES | SAVE RAIN</h1>
+            <p class="main-p">"Save rain for a sunny day, for when the clouds part, it'll be a blessing in disguise. As the rain nourishes the earth and sustains life, let us remind ourselves to cherish and conserve this invaluable resource."</p>
+            <button><a href="#section2">MORE INFO</a></button>
+        </div>
+
+    </section>
+    <section class="section2" id="section2">
+        <div class="all2">
+            <h1>ABOUT RAIN RADAR</h1>
+            <p>Rain Radar is a web app which has a Machine Learning Model running at the back. The purpose of developing this app is to protect whether it will be rainy day or not. This model is based on the Rain Prediction in India Dataset. India has an average annual rainfall of  around 125 cm of rain (890mm). Due to the country's very varied geography, including relief or topography, distance from the sea, etc.,<br>
+                The coastal regions along the Western Ghats and the northeastern states, receive higher rainfall, ranging from 2,500 to 5,000 milimeters(98 to 197 inches)annually.
+                India has the climate of Tropical monsoon due to its peculiar position in the Asian Continent. Indian Climate is mostly characterized by Wet and Dry seasons.</p>
+        </div>
+    </section>
+    <section class="section3" id="section3">
+        <div class="head3">
+            <h1>POWER BI DASHBOARD</h1>
+        </div>
+        <div class="head31">
+            <div class="left3">
+                <p>This dashboard is done using a software called PowerBI which is a product of Microsoft.
+                    Here I have just attached the images of the dashboard because PowerBI needs oraganizational
+                    account. So to see the visualizations interactive I am attaching my 
+                    dashboard file. This requires PowerBI software to open the file. The usage of dashboards like
+                    these is to bring a better understanding about the dataset and also to bring some beautiful insights</p>
+            </div>
+            <div class="right3">
+                <img src="static\powerbi.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+    <section class="section4" id="section4">
+        <h1>RAINFALL PREDICTION</h1><br>
+    <div class="container">
+    <form action="/predict" class="form" method="POST">
+        <!-- <tr><label for="Dep_Time">Date</label>
+
+        <input type="datetime" name="Dep_Time" id="Dep_Time" required="required"> -->
+        <tr><label for="Source">Location</label>
+        <select name="Source" id="Source" required="required">
+            <option value="MountGambier">MountGambier</option>
+            <option value="Wollongong">Wollongong</option>
+            
+            
+            <option value="AliceSprings">AliceSprings</option>
+            <option value="BadgerysCreek">BadgerysCreek</option>
+            <option value="Ballarat">Ballarat</option>
+            <option value="Bendigo">Bendigo</option>
+            
+        </select>
+        <tr><label for="MinTemp">Minimum Temperature</label>
+        <input type="text" placeholder="1.5" name="MinTemp" required>
+
+        <label for="MaxTemp">Maximum Temperature</label>
+        <input type="text" placeholder="18" name="MaxTemp" required>
+
+        <label for="Rainfall">Is There Rainfall yestarday ? </label>
+        <input type="text" placeholder="4.2" name="Rainfall" required></tr>
+
+        <tr><label for="Evaporation">Evaporation</label>
+        <input type="text" placeholder="6.6" name="Evaporation" required>
+        <label for="Sunshine">Sunshine</label>
+        <input type="text" placeholder="8" name="Sunshine" required><br>
+
+        <label for="WindGustSpeed">WindGust Speed</label>
+        <input type="text" placeholder="54" name="WindGustSpeed" required>
+
+        <label for="WindSpeed9am">WindSpeed at 9am</label>
+        <input type="text" placeholder="24" name="WindSpeed9am" required></tr>
+
+        <label for="WindSpeed3pm">WindSpeed at 3pm</label>
+        <input type="text" placeholder="31" name="WindSpeed3pm" required><br>
+         
+        
+       
+        <label for="Humidity9am">Humidity at 9am</label>
+        <input type="text" placeholder="73" name="Humidity9am" required><br>
+        <label for="Humidity3pm">Humidity at 3pm</label>
+        <input type="text" placeholder="64" name="Humidity3pm" required><br>
+
+
+        <label for="Pressure9am"> Pressure at 9am</label>
+        <input type="text" placeholder="10" name="Pressure9am" required><br>
+        <label for="Pressure3pm">Pressure at 3pm</label>
+        <input type="text" placeholder="10" name="Pressure3pm" required><br>
+         
+        <label for="Cloud9am">Cloud at 9am</label>
+        <input type="text" placeholder="4" name="Cloud9am" required><br>
+         
+        <label for="Cloud3pm">Cloud at 3pm</label>
+        <input type="text" placeholder="5" name="Cloud3pm" required><br>
+         
+        <label for="Temp9am">Temperature at 9am</label>
+        <input type="text" placeholder="17.3" name="Temp9am" required><br>
+         
+        <label for="Temp3pm">Temperature at 3pm</label>
+        <input type="text" placeholder="17" name="Temp3pm" required><br>
+        <label for="RainToday">Is There Rainfall happens Today ? </label>
+        <input type="text" placeholder="1" name="RainToday" required><br>
+        <!-- <label for="RainTomorrow">RainTomorrow</label>
+        <input type="text" name="RainTomorrow" required><br> -->
+     
+       
+         <br>
+
+        <input type='submit' class="button" value='Predict'>
+        <h2>0 : Rainfall is not going to happen</h2>
+        <h2>1 : Rainfall happens</h2>
+       <h2> Result : {{result}}</h2>
+    </form>
+    </div>
+    </section>
+</body>
+</html>
